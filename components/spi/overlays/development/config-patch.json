@@ -33,5 +33,10 @@
     "op": "add",
     "path": "/data/VAULTINSECURETLS",
     "value": "true"
+  },
+  {
+    "op": "add",
+    "path": "/data/VAULTINSECURETLS",
+    "value": "true"
   }
 ]

@@ -4,4 +4,4 @@
   value: https://github.com/14rcole/infra-deployments
 - op: replace
   path: /spec/source/targetRevision
-  value: preview-preview-preview-main
+  value: preview-preview-preview-preview-main
