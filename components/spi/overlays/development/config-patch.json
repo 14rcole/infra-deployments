@@ -2,12 +2,12 @@
   {
     "op": "replace",
     "path": "/data/VAULTHOST",
-    "value": "https://vault-spi-vault.apps.stoneintg436.lab.upshift.rdu2.redhat.com"
+    "value": "https://vault-spi-vault.apps.rycole.lab.upshift.rdu2.redhat.com"
   },
   {
     "op": "replace",
     "path": "/data/BASEURL",
-    "value": "https://spi-oauth-spi-system.apps.stoneintg436.lab.upshift.rdu2.redhat.com"
+    "value": "https://spi-oauth-spi-system.apps.rycole.lab.upshift.rdu2.redhat.com"
   },
   {
     "op": "add",
@@ -17,6 +17,11 @@
   {
     "op": "add",
     "path": "/data/ENABLEREMOTESECRETS",
+    "value": "true"
+  },
+  {
+    "op": "add",
+    "path": "/data/VAULTINSECURETLS",
     "value": "true"
   },
   {
