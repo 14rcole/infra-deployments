@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -xe
 set -o pipefail
 
 ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"/..
@@ -76,7 +76,7 @@ fi
 
 MY_GIT_REPO_URL=$(git ls-remote --get-url $MY_GIT_FORK_REMOTE | sed 's|^git@github.com:|https://github.com/|')
 MY_GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-trap "git checkout $MY_GIT_BRANCH" EXIT
+#trap "git checkout $MY_GIT_BRANCH" EXIT
 
 
 if echo "$MY_GIT_REPO_URL" | grep -q redhat-appstudio/infra-deployments; then
@@ -90,10 +90,10 @@ if [ -z "$MY_GITHUB_ORG" ] || [ "$MY_GITHUB_ORG" == "redhat-appstudio-appdata" ]
     exit 1
 fi
 
-if ! git diff --exit-code --quiet; then
-    echo "Changes in working Git working tree, commit them or stash them"
-    exit 1
-fi
+#if ! git diff --exit-code --quiet; then
+#    echo "Changes in working Git working tree, commit them or stash them"
+#    exit 1
+#fi
 
 # Create preview branch for preview configuration
 PREVIEW_BRANCH=preview-${MY_GIT_BRANCH}${TEST_BRANCH_ID+-$TEST_BRANCH_ID}
