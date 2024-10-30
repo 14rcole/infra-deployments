@@ -184,3 +184,6 @@ patches:
       kind: ApplicationSet
       version: v1alpha1
       name: knative-eventing
+
+#components:
+#  - ../../k-components/disable-auto-sync
