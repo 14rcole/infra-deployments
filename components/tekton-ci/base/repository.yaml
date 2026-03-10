@@ -11,7 +11,8 @@ kind: Repository
 metadata:
   name: application-api
 spec:
-  url: "https://github.com/konflux-ci/application-api"
+  #url: "https://github.com/konflux-ci/application-api"
+  url: "https://github.com/14rcole/application-api"
 ---
 apiVersion: pipelinesascode.tekton.dev/v1alpha1
 kind: Repository
